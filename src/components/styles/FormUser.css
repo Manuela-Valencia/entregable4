@@ -1,0 +1,85 @@
+.form__container {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.281);
+    top: 0;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(2px);
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+    z-index: 1000;
+}
+.form {
+    background-color: var(--bg-100);
+    padding: 2em 1.5em;
+    border-radius: 0.7em;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+}
+.form__title {
+    color: var(--text-100);
+    font-weight: 700;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.form__x {
+    position: absolute;
+    font-size: 1.2rem;
+    top: .8em;
+    right: 1.5em;
+    cursor: pointer;
+    color: var(--text-300);
+}
+.form__x:hover {
+    transform: scale(1.1);
+}
+.form__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1.2em;
+}
+.form__label {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 0.5em;
+    color: var(--hoverBtn);
+}
+.form__input {
+    border: none;
+    border: 1px solid var(--bg-300);
+    font-weight: 300;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    background-color: var(--bg-200);
+    color: var(--text-100);
+}
+.form__input::placeholder {
+    color: var(--bg-300);
+    font-size: 0.8rem;
+}
+.form__btn {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: none;
+    background: var(--btn_background);
+    color: var(--primary-300);
+    cursor: pointer;
+    margin-top: 2em;
+}
+.form__btn:hover {
+    filter: grayscale(0);
+}
+.form__close {
+    opacity: 0;
+    transform: translateX(100vw) scale(0);
+}

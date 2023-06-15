@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap');
+:root {
+	--primary-100:#0C134F;
+    --primary-200: #1D267D;
+    --sombrasBtn:#273086;
+    --primary-300:#D4ADFC;
+    --accent-100: #1D267D;
+    --accent-200:##D4ADFC;
+    --text-100:#5C469C;
+    --text-200:#D4ADFC;
+    --hoverBtn:#D4ADFC;
+    --hoverBtnSombra:#D4ADFC;
+    --text-300:#5C469C;
+    --bg-100:#8e61c9;
+    --bg-200:#d6e0f5;
+    --bg-300:#5c4679;
+	--btn_background:linear-gradient(198deg, #0C134F 21%, #1D267D 100%);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: var(--bg-100);
+	font-family: 'Karla', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+input, button {
+	font-family: inherit;
+}

@@ -1,0 +1,85 @@
+.card__content {
+    background-color: var(--bg-200);
+    color: var(--text-200);
+    padding: 1.5em 1.5em 1em;
+    border-radius: 1em;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: rgba(28, 81, 134, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+}
+.card__content:hover {
+  transform: rotate(2deg);
+}
+.card__animation {
+    animation: shake 0.7s infinite ease-in-out;
+}
+.card__titulo {
+    color: var(--text-100);
+    font-size: 1.4em;
+}
+.card__content > hr {
+    height: 1px;
+    background-color: var(--bg-300);
+    border: none;
+}
+.card__li {
+    display: flex;
+    flex-direction: column;
+    margin: 0.4em 0;
+}
+.card__span {
+    color: var(--text-300);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 0.4em 0;
+}
+/* BTN */
+.btn {
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 0.5em;
+    border: none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: transform 300ms ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn__delete {
+    background-color: var(--primary-200);
+    color: var(--bg-100);
+    background: var(--btn_background);
+    box-shadow: #1D267D 0px 10px 20px, #1D267D 0px 6px 6px;
+}
+.card__sectionBtn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.btn__edit {
+    background-color: var(--bg-300);
+    color: var(--bg-200);
+    box-shadow: rgba(145, 136, 177, 0.096) 0px 10px 20px, rgba(164, 165, 243, 0.23) 0px 6px 6px;
+
+}
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-2px) rotate(-2deg);
+    }
+    50% {
+      transform: translateX(2px) rotate(2deg);
+    }
+    75% {
+      transform: translateX(-2px) rotate(-2deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
